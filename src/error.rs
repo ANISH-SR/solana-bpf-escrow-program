@@ -7,6 +7,10 @@ pub enum EscrowError {
     //Invalid instruction
     #[error("Invalid Instruction")]
     InvalidInstruction,
+
+    /// Not Rent Exempt
+    #[error("Not Rent Exempt")]
+    NotRentExempt,
 }
 
 /// The reason we do this conversion in the first place is that the entrypoint returns a Result of either nothing or a ProgramError
